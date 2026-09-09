@@ -1,0 +1,32 @@
+[
+    {
+        "id": "primera id",
+        "titulo": "primer titulo",
+        "contenido": "contenido del primer post",
+        "autor": {
+            "nombre": "Federico Lopez",
+            "bio": "Estudiante de ingenieria",
+            "especialidad": "python",
+            "redes_sociales": ["@fedeeelpz", "@Smqcked19"],
+            "articulos_publicados": 1,
+            "activo": true
+        },
+        "tags": ["Python", "Django"],
+        "estado": "borrador"
+    },
+    {
+        "id": "segunda id",
+        "titulo": "segundo titulo",
+        "contenido": "contenido del segundo post",
+        "autor": {
+            "nombre": "Federico Lopez",
+            "bio": "Estudiante de ingenieria",
+            "especialidad": "python",
+            "redes_sociales": ["@fedeeelpz", "@Smqcked19"],
+            "articulos_publicados": 1,
+            "activo": true
+        },
+        "tags": ["Web", "Backend"],
+        "estado": "publicado"
+    }
+]
