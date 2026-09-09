@@ -7,11 +7,11 @@ Este proyecto contiene los siguientes módulos:
         tupla: estados_post: Contiene 3 estados posibles para todos los posts
         set: etiquetas_blog: Contiene las posibles etiquetas para los posts
         funciones: cargar_posts() y guardar_posts() para la interacción con posts.json
---- menu.py: Contiene la función mostrar_menu() la cual sirve para mostrar las opciones del menú interactivo en pantalla al usuario. El menú consta de 7 opciones donde las primeras 6 accionan sobre los métodos del objeto Blog y la última opción (7) finaliza la ejecución del programa.
---- operaciones.py: Contiene la función interactiva crear_nuevo_post_interactivo() para recopilar los datos introducidos por el usuario.
---- validaciones.py: Contiene la función validar_post(post, estados_permitidos) para verificar la estructura y datos obligatorios de un post.
+--- menu.py: Contiene la función mostrar_menu() la cual sirve para mostrar las opciones del menú interactivo en pantalla al usuario. El menú consta de 7 opciones donde las primeras 6 corresponden a los métodos del objeto Blog y la última opción (7) finaliza la ejecución del programa.
+--- operaciones.py: Contiene la función interactiva crear_nuevo_post_interactivo() para recopilar los datos introducidos por el usuario y crear un nuevo post.
+--- validaciones.py: Contiene la función validar_post() para verificar la estructura y datos obligatorios de un post.
 --- modelos.py: Define las clases principales del sistema:
-    Clase Post: Encapsula los atributos de una publicación (id, título, contenido, autor, tags, estado) y permite convertirlos mediante to_dict() y from_dict().
+    Clase Post: Encapsula los atributos de una publicación (id, título, contenido, autor, tags, estado) y permite convertirlos mediante to_dict() y from_dict() para guardarlos posteriormente en el archivo json.
     Clase Blog: Administra la colección de objetos Post, conteniendo la lógica de negocio y sus métodos para listar, buscar, filtrar, crear y validar posts.
 --- main.py: Aquí es donde se ejecuta el código para poner en funcionamiento el menú interactivo como punto de entrada del programa, protegido por el bloque if __name__ == "__main__":.
 
