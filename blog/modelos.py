@@ -1,30 +1,13 @@
 from .datos import estados_post
-from .validaciones import (
-    buscar_por_titulo,
-    filtrar_por_tag,
-    listar_posts,
-    validar_post,
-)
-
+from .validaciones import (buscar_por_titulo,filtrar_por_tag,listar_posts,validar_post,)
 
 class Autor:
-    def __init__(
-        self,
-        nombre,
-        bio="",
-        especialidad=None,
-        redes_sociales=None,
-        articulos_publicados=None,
-    ):
+    def __init__(self,nombre,bio="",especialidad=None,redes_sociales=None,articulos_publicados=None,):
         self.nombre = nombre
         self.bio = bio
         self.especialidad = especialidad
-        self.redes_sociales = (
-            redes_sociales if redes_sociales is not None else []
-        )
-        self.articulos_publicados = (
-            articulos_publicados if articulos_publicados is not None else []
-        )
+        self.redes_sociales = (redes_sociales if redes_sociales is not None else [])
+        self.articulos_publicados = (articulos_publicados if articulos_publicados is not None else [])
 
     def to_dict(self):
         return {
