@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mi Blog{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'posts/css/estilos.css' %}">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'inicio' %}">Inicio</a></li>
+                <li><a href="{% url 'lista_posts' %}">Posts</a></li>
+                <li><a href="{% url 'acerca' %}">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mi Blog</p>
+    </footer>
+
+</body>
+</html>

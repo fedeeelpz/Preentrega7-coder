@@ -1,0 +1,78 @@
+/* Fuente general y reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Colores generales */
+a {
+    color: #2c5f8a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Menú de navegación */
+header {
+    background-color: #2c3e50;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #a9cce3;
+    text-decoration: none;
+}
+
+/* Contenido principal */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Títulos y secciones */
+h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: #34495e;
+    margin: 1.5rem 0 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2c3e50;
+    color: #ffffff;
+    margin-top: 2rem;
+}
